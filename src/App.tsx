@@ -15,9 +15,6 @@ interface ModalData {
   imageAuthor: string;
   imageLikes: number;
 }
-interface Props {
-  message: string;
-}
 
 function App() {
   const [query, setQuery] = useState<string>("");
@@ -108,7 +105,7 @@ function App() {
 
   return (
     <div className="App">
-      <SearchBar onSearch={handleSearch} />
+      {!modalIsOpen && <SearchBar onSearch={handleSearch} />}
       <Toaster />
       {error && <ErrorMessage message={errorMsg} />}
       {images.length > 0 && (
