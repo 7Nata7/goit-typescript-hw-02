@@ -1,7 +1,7 @@
 import { Hearts } from "react-loader-spinner";
 import styles from "./LoaderComponent.module.css";
 
-export default function LoaderComponent({ loading }) {
+const LoaderComponent = ({ loading }: { loading: boolean }) => {
   return (
     <div className={styles.loaderStyle}>
       <Hearts
@@ -14,4 +14,6 @@ export default function LoaderComponent({ loading }) {
       />
     </div>
   );
-}
+};
+
+export default LoaderComponent;
