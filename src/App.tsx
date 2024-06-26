@@ -7,6 +7,8 @@ import ImageModal from "./components/imageModal/ImageModal.jsx";
 import LoaderComponent from "./components/loaderComponent/LoaderComponent.jsx";
 import LoadMoreBtn from "./components/loadMoreBtn/LoadMoreBtn.jsx";
 import SearchBar from "./components/searchBar/SearchBar.jsx";
+import { Image as ImageType, ModalData as ModalDataType } from './types';
+
 
 interface ModalData {
   imageSrc: string;

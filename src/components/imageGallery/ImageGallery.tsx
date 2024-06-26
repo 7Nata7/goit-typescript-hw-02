@@ -35,3 +35,4 @@ const ImageGallery: React.FC<Props> = ({ images, onImageClick }) => {
 };
 
 export default ImageGallery;
+
