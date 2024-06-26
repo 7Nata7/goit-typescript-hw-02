@@ -20,7 +20,7 @@ interface ModalData {
 
 function App() {
   const [query, setQuery] = useState<string>("");
-  const [images, setImages] = useState<any[]>([]);
+  const [images, setImages] = useState<ImageType[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<boolean>(false);
   const [errorMsg, setErrorMsg] = useState<string>("");
